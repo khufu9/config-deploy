@@ -8,10 +8,10 @@ function install_bspwm() {
 
 function configure_bspwm() {
 	echo "* Installing bspwm"
-	mkdir $HOME/.config/bspwm
+	mkdir -p $HOME/.config/bspwm
 	cp wm/bspwm/bspwmrc $HOME/.config/bspwm/
-	mkdir $HOME/.config/sxhkd/
-	cp wm/bspwm/sxhkd $HOME/.config/sxhkd/sxhkdrc
+	mkdir -p $HOME/.config/sxhkd/
+	cp wm/bspwm/sxhkdrc $HOME/.config/sxhkd/
 	chmod +x $HOME/.config/sxhkd/sxhkdrc
 }
 
