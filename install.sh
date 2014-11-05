@@ -11,8 +11,8 @@ function configure_bspwm() {
 	mkdir $HOME/.config/bspwm
 	cp wm/bspwm/bspwmrc $HOME/.config/bspwm/
 	mkdir $HOME/.config/sxhkd/
-	cp wm/bspwm/sxhkd $HOME/.config/sxhkd/
-	chmod +x $HOME/.config/sxhkd/sxhkdrm
+	cp wm/bspwm/sxhkd $HOME/.config/sxhkd/sxhkdrc
+	chmod +x $HOME/.config/sxhkd/sxhkdrc
 }
 
 function configure_xorg() {
