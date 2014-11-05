@@ -4,6 +4,9 @@
 super + alt + Escape
 	bspc quit
 
+super + {u,i,o,p}
+	bspc window --presel {left,down,up,right}
+
 super + w
 	bspc window -c
 
@@ -22,10 +25,10 @@ super + {grave,Tab}
 super + apostrophe
 	bspc window -s last
 
-super + {o,i}
-	bspc control --record-history off; \
-	bspc window {older,newer} -f; \
-	bspc control --record-history on
+#super + {o,i}
+#	bspc control --record-history off; \
+#	bspc window {older,newer} -f; \
+#	bspc control --record-history on
 
 super + y
 	bspc window -w last.manual
